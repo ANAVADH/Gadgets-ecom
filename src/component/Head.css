@@ -1,0 +1,12 @@
+.top{
+    background-color:#1B9CFC;
+    padding:10px 0;
+    color: #ffff;
+}
+.top i{
+    margin-right:10px ;
+}
+.top label{
+    margin-right:30px ;
+    font-size: 13px;
+}
