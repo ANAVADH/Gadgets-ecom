@@ -4,13 +4,13 @@ function Nav() {
   return (
     <div>
         <div className='header'>
-            <div className='container d_flex'>
-                <div className='category d_flex'>
+            
+                <div className='category'>
                  <label>All categories <i class="fa-solid fa-chevron-down"></i></label>
                 </div>
 
-                <div className='links'>
-                    <ul className='nav f_flex'>
+                <div className='nav'>
+                    <ul className='list'>
                         <li>Books</li>
                         <li>Electronics</li>
                         <li>Real Estate</li>
@@ -28,7 +28,7 @@ function Nav() {
             </div>
         </div>
       
-    </div>
+    
   )
 }
 

@@ -21,22 +21,27 @@ body{
   display: flex;
   justify-content: space-between;
 }
-.f_flex {
+.header{
   display: flex;
- list-style-type: none;
- justify-content: space-between;
- 
-}
-.links{
-  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 
 }
-.c_flex {
+.list{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  padding-right:80px ;
+  color: #4D4D4D;
 }
-.logo{
-  height: 120px;
-  margin-left: -17px;
+.nav{
+  
+  width: 80%;
+  
+}
+.category{
+  padding-left: 82px;
+  color: #4D4D4D;
 }
