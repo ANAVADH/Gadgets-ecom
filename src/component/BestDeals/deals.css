@@ -11,6 +11,11 @@
     padding-top: 70px;
 }
 .items{
-    display:flex ;
+    display:flex;
 
+}
+.headding{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

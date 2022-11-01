@@ -1,0 +1,106 @@
+.carousel .slick-arrow.slick-prev,
+.carousel .slick-arrow.slick-next {
+    background: #ffffff;
+    width: 47px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+   
+    font-family:initial!important;
+   
+    position: absolute;
+    opacity:1%;
+    
+   
+  
+  
+}
+.carousel .slick-prev {
+  left: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.carousel .slick-next {
+  right: 0;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.custom-indicator {
+  bottom: -65px;
+}
+.custom-indicator li {
+  width: 50px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+.custom-indicator li.slick-active {
+  filter: grayscale(0%);
+}
+.carousel{
+   padding: 40px;
+    padding-left: 300px;
+    display: block;
+   
+}
+.thecard{
+    padding: 10px;
+  
+  
+   
+}
+.theimg{
+    border-style: solid;
+    border-color:#ffff ;
+    border-radius: 8px;
+}
+.words{
+    background-color:#ffffff;
+    margin-left:-280px ;
+    margin-right: 1250px;
+    margin-top: -1px;
+    margin-bottom: -190px;
+}
+.carousel .slick-arrow.slick-prev{
+    margin-left: -280px;
+    margin-top: 40px;
+}
+.carousel .slick-arrow.slick-next{
+    margin-right: 1300px;
+    margin-top: 40px;
+
+}
+.fa-chevron-right{
+ 
+    margin-left: -165px;
+   
+    
+   bottom: 500px;
+   top:250px;
+   position: relative;
+ 
+}
+.fa-chevron-left{
+ 
+    margin-left: -120px;
+   
+    
+   bottom: 500px;
+   top:250px;
+   position: relative;
+ 
+}
+.btmfont{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+}
+.btmfont>p{
+    margin-top: 5px;
+}
+.bhead{
+    margin-right: 36px;
+}
