@@ -1,0 +1,16 @@
+.cdz{
+    max-width: 280px;
+    
+}
+.parent{
+    padding: 50px;
+    align-items: center;
+}
+.products{
+    padding-left: 80px;
+    padding-top: 70px;
+}
+.items{
+    display:flex ;
+
+}
