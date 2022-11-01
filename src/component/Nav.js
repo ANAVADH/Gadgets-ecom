@@ -10,19 +10,42 @@ function Nav() {
                 </div>
 
                 <div className='nav'>
-                    <ul className='list'>
-                        <li>Books</li>
-                        <li>Electronics</li>
-                        <li>Real Estate</li>
-                        <li>Cars-Bikes</li>
-                        <li>Dorm-Furniture</li>
-                        <li>Men</li>
-                        <li>Women</li>
-                        <li>Men</li>
-                        <li>Music</li>
-                        <li>Hobbies Games</li>
-                        <li>Toys</li>
-                        <li>Kids</li>
+                <ul className='list'>
+                    <div className='maine'>
+                    <div>
+                    <li>Books</li>
+                    </div>
+                    <div>
+                    <li>Electronics</li>
+                    </div>
+                    <div>
+                    <li>Real Estate</li>
+                    </div>
+                    <div>
+                    <li>Cars-Bikes</li>
+                    </div>
+                    <div>
+                    <li>Dorm-Furniture</li>
+                    </div>
+                    <div>
+                    <li>  <li>Music</li></li>
+                    </div>
+                    <div>
+                    <li>Hobbies Games</li>
+                    </div>
+                    <div>
+                    <li>Toys</li>
+                    </div>
+                    <div>
+                    <li>Kids</li>
+                    </div>
+                    <div>
+                    <li>Men</li>
+                    </div>
+                    </div>
+                   
+                       
+                      
                     </ul>
                 </div>
             </div>
