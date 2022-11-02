@@ -1,0 +1,15 @@
+.rvi{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.secheadding{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vv{
+    padding-right: 100px;
+}
+.smit{
+    margin-top: 50px;
+}

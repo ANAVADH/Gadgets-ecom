@@ -19,3 +19,35 @@ border: none;
     padding-left: 60px;
     padding-top: 50px;
 }
+.inner-cards{
+
+align-items: center;
+justify-content: space-evenly;
+padding-left: 445px;
+margin-top: -180px;
+
+}
+.scc{
+    color: black;
+}
+.bar{
+    height: 10px;
+width: 130.355px;
+left: 921px;
+top: 3126px;
+border-radius: 40px;
+background: #3187ED
+
+}
+.fa-ellipsis{
+    margin-top: 30px;
+    margin-left: 600px;
+    opacity: 50%;
+    width:50px;
+}
+.themore{
+    margin-left: 1095px;
+    margin-top: -20px;
+
+    
+}

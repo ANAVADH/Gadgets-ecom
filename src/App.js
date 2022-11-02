@@ -5,6 +5,9 @@ import BestDeals from './component/BestDeals/BestDeals';
 import Classified from './component/classifiedProducts/Classified';
 import Recommend from './component/Recommended/Recommend';
 import FlashSale from './component/FlashSale/FlashSale';
+import HotSale from './component/HotSale/HotSale';
+import Grid from './component/Grid/Grid';
+import RecentlyViewed from './component/RecentlyViewed/RecentlyViewed';
 
 
 
@@ -18,8 +21,9 @@ function App() {
       <Classified/>
       <Recommend/>
       <FlashSale/>
-      
-      
+      <HotSale/>
+      <Grid/>
+      <RecentlyViewed/>
       
     </div>
   );

@@ -1,0 +1,15 @@
+.gdz{
+
+    margin-top: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.theime>img{
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 30px;
+}
+.theime{
+    border: none;
+}
