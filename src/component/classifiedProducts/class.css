@@ -11,7 +11,7 @@
     font-family:initial!important;
    
     position: absolute;
-    opacity:1%;
+   
     
    
   
@@ -44,9 +44,11 @@
     padding-left: 300px;
     display: block;
    
+   
 }
 .thecard{
     padding: 10px;
+  
   
   
    
@@ -72,7 +74,7 @@
     margin-top: 40px;
 
 }
-.fa-chevron-right{
+.ther{
  
     margin-left: -165px;
    
@@ -103,4 +105,10 @@
 }
 .bhead{
     margin-right: 36px;
+}
+.explore{
+    margin-left: -280px;
+    margin-top: 20px;
+    background-color: #00C6D7;
+    border: #00C6D7;
 }

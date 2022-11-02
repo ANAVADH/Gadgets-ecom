@@ -3,9 +3,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './class.css';
 import data from './my.json'
+import Button from 'react-bootstrap/Button';
 
 import { useState } from 'react';
 import { useEffect } from 'react';
+
 let slidesToShow = 5;
 const PreviousBtn = (props) => {
   console.log(props);
@@ -35,7 +37,8 @@ const NextBtn = (props) => {
 };
 
 const carouselProperties = {
-  
+  prevArrow: <PreviousBtn />,
+  nextArrow: <NextBtn />,
   slidesToShow: slidesToShow,
   slidesToScroll: 2,
   infinite: false,
@@ -98,17 +101,22 @@ const Cdr = () => {
       <div className='btngroup'>
       
       <PreviousBtn />
-      <i class="fa-solid fa-chevron-right"></i>
+      <i class="fa-solid fa-chevron-right ther"></i>
       <i class="fa-solid fa-chevron-left"></i>
        <NextBtn />
+      
        </div>
+      
       <div className='things'>
       <Slider {...carouselProperties}>
         {data.map((item) => (
           <Card item={item} />
         ))}
+        
       </Slider>
       </div>
+      <Button className='explore'  size="lg"> Explore <i class="fa-solid fa-chevron-right"></i>
+        </Button>
     </div>
   );
 };
@@ -131,9 +139,9 @@ const Card = ({ item }) => {
         }}
       />
       </div>
-      <p className='bhead' style={{ fontSize: '14px',fontWeight:"bold" }}>TOP TRNDING TVs</p>
+      <p className='bhead' style={{ fontSize: '14px',fontWeight:"bold" }}>{item.title}</p>
       <div className='btmfont'>
-        <h6 className='text-primary'>$335.5</h6>
+        <h6 className='text-primary'>{item.price}</h6>
       <p style={{ fontSize: '10px', color: 'gray' }}>
       <i class="fa-solid fa-location-dot"></i> capehadstone
       </p>
