@@ -8,6 +8,7 @@ import FlashSale from './component/FlashSale/FlashSale';
 import HotSale from './component/HotSale/HotSale';
 import Grid from './component/Grid/Grid';
 import RecentlyViewed from './component/RecentlyViewed/RecentlyViewed';
+import Footer from './component/Footer/Footer';
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <HotSale/>
       <Grid/>
       <RecentlyViewed/>
+      <Footer/>
       
     </div>
   );
