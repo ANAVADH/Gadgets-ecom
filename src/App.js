@@ -4,6 +4,7 @@ import Head from './component/Head';
 import BestDeals from './component/BestDeals/BestDeals';
 import Classified from './component/classifiedProducts/Classified';
 import Recommend from './component/Recommended/Recommend';
+import FlashSale from './component/FlashSale/FlashSale';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <BestDeals/>
       <Classified/>
       <Recommend/>
+      <FlashSale/>
       
       
       

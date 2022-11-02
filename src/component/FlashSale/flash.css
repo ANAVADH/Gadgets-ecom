@@ -1,0 +1,21 @@
+.fh{
+    
+    width: 1350px;
+    height: 280px;
+    margin-left: 100px;
+    margin-top: 100px;
+border: none;
+    padding-bottom: 200px;
+}
+.fsale{
+
+   height: 280px;
+  border-style: solid;
+  border: #ffff;
+  border-radius: 20px;
+  
+}
+.tags{
+    padding-left: 60px;
+    padding-top: 50px;
+}
