@@ -1,8 +1,20 @@
 import React from "react"
+import { useDispatch } from "react-redux";
+import { logout } from "../../redux/AuthRedux";
 
 import "./footer.css"
 
 const Footer = () => {
+
+  const dispatch = useDispatch();
+
+
+const handleLogout = (e) =>{
+    e.preventDefault();
+
+    dispatch(logout())
+
+}
   return (
     <>
       <section className='newletter'>
@@ -37,7 +49,7 @@ const Footer = () => {
               <li>Product</li>
               <li>Classifieds</li>
               <li>Contact Us</li>
-              <li>Login</li>
+              <li onClick={(e) => handleLogout(e)}>Logout</li>
               <li>Sign Up</li>
             </ul>
           </div>

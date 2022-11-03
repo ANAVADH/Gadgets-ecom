@@ -99,6 +99,7 @@
 }
 .box>ul{
   list-style-type: none;
+  cursor: pointer;
 }
 .lst>h3{
   padding-left: 25px;

@@ -1,31 +1,26 @@
-import Banner from './component/Banner/Banner';
+import { useSelector } from "react-redux";
 import './App.css';
-import Head from './component/Head';
-import BestDeals from './component/BestDeals/BestDeals';
-import Classified from './component/classifiedProducts/Classified';
-import Recommend from './component/Recommended/Recommend';
-import FlashSale from './component/FlashSale/FlashSale';
-import HotSale from './component/HotSale/HotSale';
-import Grid from './component/Grid/Grid';
-import RecentlyViewed from './component/RecentlyViewed/RecentlyViewed';
-import Footer from './component/Footer/Footer';
+import Home from './Pages/Home';
+import { Routes, Route, Navigate  } from "react-router-dom";
+
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+
 
 
 
 function App() {
+  const user = useSelector((state)=> state.user)
+  console.log(`the user ${user}`)
   
   return (
     <div className="App">
-      <Head/>
-      <Banner/>
-      <BestDeals/>
-      <Classified/>
-      <Recommend/>
-      <FlashSale/>
-      <HotSale/>
-      <Grid/>
-      <RecentlyViewed/>
-      <Footer/>
+
+<Routes>
+<Route  path="/" element={user ?<Home/> : <Navigate to='/login' />} />
+        <Route path="/login" element={user ? <Navigate to='/' /> : <Login/>} />
+        <Route path="/register" element={user ? <Navigate to='/' /> : <Signup/>} />
+   </Routes>
       
     </div>
   );
