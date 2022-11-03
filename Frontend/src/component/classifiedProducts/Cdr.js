@@ -41,7 +41,7 @@ const carouselProperties = {
   nextArrow: <NextBtn />,
   slidesToShow: slidesToShow,
   slidesToScroll: 2,
-  infinite: false,
+  infinite: true,
   // slidesToScroll={3}
   responsive: [
     {
