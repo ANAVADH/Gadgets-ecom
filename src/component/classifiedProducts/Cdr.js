@@ -11,11 +11,11 @@ import { useEffect } from 'react';
 let slidesToShow = 5;
 const PreviousBtn = (props) => {
   console.log(props);
-  const { onClick, currentSlide } = props;
+  const { className, onClick, currentSlide } = props;
   return (
     <>
       {currentSlide !== 0 && (
-        <div  onClick={onClick}>
+        <div className={className}  onClick={onClick}>
         
         </div>
       )}
@@ -23,12 +23,12 @@ const PreviousBtn = (props) => {
   );
 };
 const NextBtn = (props) => {
-  const {  onClick, slideCount, currentSlide } = props;
+  const { className, onClick, slideCount, currentSlide } = props;
   console.log(props);
   return (
     <>
       {currentSlide !== slideCount - slidesToShow && (
-        <div onClick={onClick}>
+        <div  className={className} onClick={onClick}>
         
         </div>
       )}
@@ -99,11 +99,13 @@ const Cdr = () => {
       
       </div>
       <div className='btngroup'>
-      
-      <PreviousBtn />
       <i class="fa-solid fa-chevron-right ther"></i>
       <i class="fa-solid fa-chevron-left"></i>
+      <div className='bbt'>
+      <PreviousBtn />
+      
        <NextBtn />
+       </div>
       
        </div>
       

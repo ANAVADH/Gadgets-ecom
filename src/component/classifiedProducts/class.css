@@ -1,23 +1,17 @@
 .carousel .slick-arrow.slick-prev,
 .carousel .slick-arrow.slick-next {
-    background: #ffffff;
-    width: 47px;
-    height: 104px;
+  background: #ffffff;
+    width: 130px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
-   
-    font-family:initial!important;
-   
-    position: absolute;
-   
-    
-   
-  
-  
-}
-.carousel .slick-prev {
+    padding-right: -50px;
+    opacity: 1%;
+   font-family:initial!important;
+   }
+  .carousel .slick-prev {
   left: 0;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -86,7 +80,7 @@
 }
 .fa-chevron-left{
  
-    margin-left: -120px;
+    margin-left: -135px;
    
     
    bottom: 500px;
@@ -111,4 +105,9 @@
     margin-top: 20px;
     background-color: #00C6D7;
     border: #00C6D7;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
 }
