@@ -23,71 +23,91 @@ const Footer = () => {
         </div>
       </section>
       <footer>
-        <div className='container padding'>
+        <div className='container padding allink'>
           <div className='box logo'>
-            <h1>Logoipsum</h1>
+            <h4>Logoipsum</h4>
             
             <p>anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo cam.</p>
 
           
           </div>
           <div className='box link'>
-            <h3>Explore</h3>
+            <h3>Quick links</h3>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
+              <li>Product</li>
+              <li>Classifieds</li>
+              <li>Contact Us</li>
+              <li>Login</li>
+              <li>Sign Up</li>
             </ul>
           </div>
           <div className='box link'>
-            <h3>Quick Links</h3>
+            <h3>Customer area</h3>
             <ul>
-              <li>Contact Us</li>
-              <li>Pricing</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
+              <li>My account</li>
+              <li>Orders</li>
+              <li>Tracking list</li>
+              <li>Terms</li>
+              <li>Privacy policy</li>
+              <li>Return policy</li>
+              <li>My cart</li>
             </ul>
           </div>
-          <div className='box'>
-            <h3>Recent Post</h3>
-           
-              <div className='items flexSB'>
-                <div className='img'>
-                  <img src="" alt='' />
-                </div>
-                <div className='text'>
-                  <span>
-                    <i className='fa fa-calendar-alt'></i>
-                    <label htmlFor=''>rth</label>
-                  </span>
-                  <span>
-                    <i className='fa fa-user'></i>
-                    <label htmlFor=''>trnj</label>
-                  </span>
-                  <h4>.</h4>
-                </div>
-              </div>
+          <div className='box link'>
+            <h3>Vendor area</h3>
+            <ul>
+              <li>Partner with us</li>
+              <li>Training</li>
+              <li>Procedures</li>
+              <li>Terms</li>
+              <li>Privacy policy</li>
+              
+            </ul>
+             
           
           </div>
-          <div className='box last'>
-            
+          <div className='box link lst'>
+          <h3>Contact</h3>
             <ul>
-              <li>
-                <i className='fa fa-map'></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
-              </li>
-              <li>
-                <i className='fa fa-phone-alt'></i>
-                +2 392 3929 210
-              </li>
-              <li>
-                <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
-              </li>
+          <li><p>anonimo tipografo prese una cassetta di caratteri tta tipografo prese una cassetta  </p></li>  
+          
             </ul>
+            <div className="haq">
+              <div className="icz">
+              <i class="fa-solid fa-headset"></i>
+              </div>
+              <div className="number">
+               <h6>Have any question ?</h6>
+               <p className="text-primary">+1254 215 454</p>
+              </div>
+              <div className="chat">
+              <button type="button" class="btn btn-outline-primary">Chat</button>
+              </div>
+            </div>
+          <div className="lastbtns">
+            <div className="btap apple" >
+
+            
+            <i class="fa-brands fa-apple"></i>
+            
+              <div className="inb">
+                <p>Download on the</p>
+                <span>App store</span>
+              </div>
+
+            </div>
+            <div className="btap playstore">
+
+            <i class="fa-brands fa-google-play"></i>
+            
+            <div className="inb">
+              <p>GET IT ON</p>
+              <span>Play store</span>
+            </div>
+
+            </div>
+          </div>
+
           </div>
         </div>
       </footer>
