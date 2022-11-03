@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from './images/logo.png'
 
 
@@ -21,8 +22,9 @@ function LogoBar() {
         
         <i class="fa-regular fa-heart"></i>
         
-        
+        <Link to='/cart'>
         <i class="fa-solid fa-cart-shopping"></i>
+        </Link>
     
         
         <i class="fa-solid fa-circle-user"></i>

@@ -1,6 +1,7 @@
-import {configureStore} from '@reduxjs/toolkit'
+import { configureStore} from '@reduxjs/toolkit'
 
 import userReducer from './AuthRedux'
+
 
 import {
     persistStore,
@@ -20,7 +21,8 @@ import {
     storage,
   }
 
-//   const rootReducers = combineReducers({user:userReducer})
+
+
   
   const persistedReducer = persistReducer(persistConfig, userReducer )
 

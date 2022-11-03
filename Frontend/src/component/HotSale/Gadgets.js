@@ -4,6 +4,7 @@ import './hotsale.css'
 
 
 
+
 function Gadgets() {
   return (
     <div className='Gad'>
@@ -12,8 +13,8 @@ function Gadgets() {
          
         </div>
        
-
-    <SingleCard/>
+<SingleCard />
+    
       
     </div>
   )

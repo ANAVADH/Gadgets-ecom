@@ -11,16 +11,16 @@ import Grid from '../component/Grid/Grid';
 import RecentlyViewed from '../component/RecentlyViewed/RecentlyViewed';
 import Footer from '../component/Footer/Footer';
 
-function Home() {
+function Home(Pno) {
   return (
     <div>
            <Head/>
       <Banner/>
       <BestDeals/>
-      <Classified/>
+      <Classified />
       <Recommend/>
       <FlashSale/>
-      <HotSale/>
+      <HotSale Pno={Pno}/>
       <Grid/>
       <RecentlyViewed/>
       <Footer/>

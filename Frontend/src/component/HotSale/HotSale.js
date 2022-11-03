@@ -1,10 +1,10 @@
 import React from 'react'
 import Gadgets from './Gadgets'
 
-function HotSale() {
+function HotSale(Pno) {
   return (
     <div>
-        <Gadgets/>
+        <Gadgets Pno={Pno}/>
       
     </div>
   )
