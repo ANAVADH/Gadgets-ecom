@@ -125,7 +125,7 @@ const Cart = () => {
         removeItem,
       } = useCart();
  
-
+      
 
  
 //########################################################################################################################
@@ -169,10 +169,10 @@ if (isEmpty) return  <p>its empty</p>
                 <ProductAmount></ProductAmount>
                 <FontAwesomeIcon icon={faTrash} onClick={() => removeItem(item.id)}></FontAwesomeIcon>
               </ProductAmountContainer>
-              <ProductPrice>${item.price}</ProductPrice>
+              <ProductPrice>${item.price * item.quantity}</ProductPrice>
             </PriceDetail>
           </Product>
-
+         
          )) }
           <Hr />
          
@@ -184,6 +184,7 @@ if (isEmpty) return  <p>its empty</p>
   </Container>
 
   )
+
          }
 
 export default Cart

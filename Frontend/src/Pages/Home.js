@@ -11,7 +11,7 @@ import Grid from '../component/Grid/Grid';
 import RecentlyViewed from '../component/RecentlyViewed/RecentlyViewed';
 import Footer from '../component/Footer/Footer';
 
-function Home(Pno) {
+function Home() {
   return (
     <div>
            <Head/>
@@ -20,7 +20,7 @@ function Home(Pno) {
       <Classified />
       <Recommend/>
       <FlashSale/>
-      <HotSale Pno={Pno}/>
+      <HotSale/>
       <Grid/>
       <RecentlyViewed/>
       <Footer/>

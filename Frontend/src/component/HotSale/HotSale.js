@@ -4,7 +4,7 @@ import Gadgets from './Gadgets'
 function HotSale(Pno) {
   return (
     <div>
-        <Gadgets Pno={Pno}/>
+        <Gadgets/>
       
     </div>
   )

@@ -4,8 +4,26 @@ import './hotsale.css'
 import data from './data'
 
 
-function SingleCard(Pno) {
+function SingleCard() {
   const { addItem } = useCart();
+  const { items } = useCart();
+
+  const inCart = items;
+
+  const filter = [];
+
+  for(let i=0;i<data.length;i++){
+    filter.push({
+      ...data[i],
+      ...(inCart.find((inner)=> inner.id === data[i].id))
+    })
+  }
+
+
+
+
+ 
+  console.log(filter)
  
  
  
@@ -15,15 +33,15 @@ function SingleCard(Pno) {
           
             
        
-       {data.map((item)=>(
+       {filter.map((item)=>(
+        
         <div  className="main-c card col">
        <img className=" card-img-top" src={item.image} alt="an"/>
        <div className="card-body">
          <p className="card-text">{item.name}</p>
          <div>
          <h6 className='text-primary'>${item.price}</h6>
-         
-         <p  className='text-danger'>only-({item.quantity})left</p>
+                  <p  className='text-danger'>only-({item.quantity ? item.Quantity-item.quantity:item.Quantity})left</p>
         
          </div>
          <div className='last'>
@@ -47,3 +65,4 @@ function SingleCard(Pno) {
 }
 
 export default SingleCard
+
