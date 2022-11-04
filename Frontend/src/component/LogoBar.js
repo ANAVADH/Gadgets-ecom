@@ -1,9 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from './images/logo.png'
+import Badge from '@mui/material/Badge';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {  useCart } from "react-use-cart";
 
 
 function LogoBar() {
+     const { totalUniqueItems} = useCart();
+     
   return (
     <div className='l_header'>
 
@@ -23,7 +28,8 @@ function LogoBar() {
         <i class="fa-regular fa-heart"></i>
         
         <Link to='/cart'>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <Badge className='badgec text-secondary' badgeContent={totalUniqueItems} color="secondary"/>{/* <ShoppingCartIcon /> */}
+        <i class="fa-solid fa-basket-shopping"></i>
         </Link>
     
         

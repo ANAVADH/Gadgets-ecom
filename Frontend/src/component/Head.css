@@ -93,12 +93,25 @@ cursor: pointer;
 .iconz{
     display: flex;
     width: 150px;
+    align-items: center;
     
     justify-content:space-around;
     padding-left: 20px;
     
 
 }
+.iconz .badgec{
+    transform: scale(0.8);
+    margin-top: -25px;
+    margin-right: -15px ;
+   
+}
+a {
+    color: #4D4D4D;
+  }
+  a:hover {
+     color: #3187ED
+  }
 
 
 
