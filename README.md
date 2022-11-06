@@ -34,7 +34,7 @@ UI conversion and Functionality implementation of a shopping cart.
 
 ## Getting Started
 
-- Step 1 -Create .env file and provide the above given details.
+- Step 1 -Create .env file and provide the above given details in Server folder.
 - Step 2- Install the nodemodules by typing "npm install" in Server folder
 - Step 3- Do "npm start" in Server Folder to start the connection,after the connection is successfully established go to next step
 - Step 4- Change directory to Frontend folder.
