@@ -50,7 +50,7 @@ const handleLogout = (e) =>{
               <li>Classifieds</li>
               <li onClick={(e) => handleLogout(e)}>Sign out</li>
               <li>Sign Up</li>
-              <li >Logout</li>
+              <li >contact</li>
              
             </ul>
           </div>
