@@ -20,7 +20,7 @@ UI conversion and Functionality implementation of a shopping cart.
 ## Getting Started
 
 - Step 1- Install the nodemodules by typing "npm install" in Frontend folder
-- Step 2- Do "npm start" in Server Folder to start the connection,after the connection is successfully established go to next step
+- Step 2- Do "npm start" in Frontend Folder to start the connection,after the connection is successfull app runs on localhost:3000
 - alert("inorder to use cart you must be Authenticated")
 
 
