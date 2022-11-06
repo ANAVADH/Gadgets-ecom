@@ -1,12 +1,22 @@
+import { signOut } from "firebase/auth"
 import React from "react"
-import { useAuth0 } from "@auth0/auth0-react";
+import { Navigate } from "react-router-dom"
+import {auth} from '../../firebase'
 
 
 import "./footer.css"
 
 
 const Footer = () => {
-  const { logout } = useAuth0();
+ 
+  const Logout = ()=>{
+    
+signOut(auth).then(() => {
+   <Navigate to='/'/>
+}).catch((error) => {
+  console.log(error)
+});
+  }
 
   return (
     <>
@@ -42,7 +52,7 @@ const Footer = () => {
               <li>Product</li>
               <li>Classifieds</li>
               
-              <li onClick={() => logout({ returnTo: window.location.origin })}>Sign out</li>
+              <li onClick={Logout}>Sign out</li>
               
               <li>Sign Up</li>
               <li >contact</li>

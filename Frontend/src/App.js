@@ -1,24 +1,17 @@
-
+import {auth} from './firebase'
 import './App.css';
 import Home from './Pages/Home';
-import { Routes, Route , Navigate } from "react-router-dom";
+import { Routes, Route, Navigate , } from "react-router-dom";
 import Login from "./Pages/Login";
 
 import Cart from "./Pages/Cart";
 import { CartProvider } from "react-use-cart";
-import { useAuth0 } from '@auth0/auth0-react';
-
-
-
-
-
+import {useAuthState} from 'react-firebase-hooks/auth';
 
 
 function App() {
-
-  const { isAuthenticated } = useAuth0();
-  console.log(isAuthenticated)
-
+  const [user] = useAuthState(auth);
+ 
   
   return (
     <div className="App">
@@ -26,10 +19,10 @@ function App() {
  <CartProvider>
 <Routes>
  
-<Route  path="/" element={ <Home/>} />
-        <Route path="/login" element={ <Login/>} />
+<Route  path="/" element={user ? <Home/> : <Navigate to='/login'/>} />
+        <Route path="/login" element={user? <Navigate to='/'/>: <Login/>} />
        
-        <Route path="/cart" element={ isAuthenticated ? <Cart/> : <Navigate to='/login'/>} />
+        <Route path="/cart" element={user ?  <Cart/> : <Navigate to='/login'/> }/>
    </Routes>
    </CartProvider>
  
