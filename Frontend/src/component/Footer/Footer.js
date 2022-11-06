@@ -48,9 +48,10 @@ const handleLogout = (e) =>{
             <ul>
               <li>Product</li>
               <li>Classifieds</li>
-              <li>Contact Us</li>
-              <li onClick={(e) => handleLogout(e)}>Logout</li>
+              <li onClick={(e) => handleLogout(e)}>Sign out</li>
               <li>Sign Up</li>
+              <li >Logout</li>
+             
             </ul>
           </div>
           <div className='box link'>

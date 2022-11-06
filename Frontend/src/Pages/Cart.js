@@ -129,7 +129,17 @@ const Cart = () => {
 
  
 //########################################################################################################################
-if (isEmpty) return  <p>its empty</p>
+if (isEmpty) return  (<Container>
+  <Wrapper>
+    <Title>CART is empty</Title>
+    <Top>
+      <Link to='/'>
+      <TopButton>Add products</TopButton>
+      </Link>
+      </Top>
+      </Wrapper>
+      </Container>
+      )
   return (
     <Container>
      
