@@ -1,32 +1,38 @@
-import { useSelector } from "react-redux";
+
 import './App.css';
 import Home from './Pages/Home';
-import { Routes, Route, Navigate  } from "react-router-dom";
-
+import { Routes, Route , Navigate } from "react-router-dom";
 import Login from "./Pages/Login";
-import Signup from "./Pages/Signup";
+
 import Cart from "./Pages/Cart";
 import { CartProvider } from "react-use-cart";
+import { useAuth0 } from '@auth0/auth0-react';
+
+
+
 
 
 
 
 function App() {
-  const user = useSelector((state)=> state.user)
 
+  const { isAuthenticated } = useAuth0();
+  console.log(isAuthenticated)
 
   
   return (
     <div className="App">
+       
  <CartProvider>
 <Routes>
  
-<Route  path="/" element={user ?<Home/> : <Navigate to='/login' />} />
-        <Route path="/login" element={user ? <Navigate to='/' /> : <Login/>} />
-        <Route path="/register" element={user ? <Navigate to='/' /> : <Signup/>} />
-        <Route path="/cart" element={<Cart/>} />
+<Route  path="/" element={ <Home/>} />
+        <Route path="/login" element={ <Login/>} />
+       
+        <Route path="/cart" element={ isAuthenticated ? <Cart/> : <Navigate to='/login'/>} />
    </Routes>
    </CartProvider>
+ 
       
     </div>
   );
